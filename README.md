@@ -1,1 +1,2 @@
-Імя Прізecho Імя П�Klynchuk Anatoly 519st
+Klynchuk Anatoly 519st
+Galina Proskura 
