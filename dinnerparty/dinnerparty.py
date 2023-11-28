@@ -1,7 +1,12 @@
+import random
 imenа_dict = {} #imena_list =[] [234234,234234]? список того где хранится наши имена
+
 print ("Enter the number of friends joining (including you):")
+
 slovo = int(input("> "))   #тут храница кол-во людей
+
 a = 1
+
 if slovo <= 0:
     print("No one is joining for the party")
 else:
@@ -12,10 +17,22 @@ else:
         z = input("> ") # тут вводятся имена людей
         imenа_dict[z] = 0
 
-     print ("list name",imenа_dict)
-
 print ("Enter the total amount:")
+
 l = int(input("> "))   #счёт
-for name in imenа_dict:
+
+print ("Who is lucky?")
+y = input("> ")
+print ("Do you want to use the 'Who is lucky?' feature? Write yes/no:")
+if y.lower() == "yes":
+    p = random.choice(list(imenа_dict.keys()))
+    for name in imenа_dict:
+        if name == p:
+            continue
+        imenа_dict[name] = round(l / (slovo-1), 2)
+    print(f"{p} is the lucky one!")
+    print(imenа_dict)
+else:
+    for name in imenа_dict:
         imenа_dict[name] = round(l / slovo, 2)
-print (imenа_dict)
+    print (imenа_dict)
