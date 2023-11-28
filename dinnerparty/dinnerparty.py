@@ -1,9 +1,9 @@
 import random
-imenа_dict = {} #imena_list =[] [234234,234234]? список того где хранится наши имена
+imenа_dict = {} #imena_list =[] [234234,234234]? список того де зберігається наші імена
 
 print ("Enter the number of friends joining (including you):")
 
-slovo = int(input("> "))   #тут храница кол-во людей
+slovo = int(input("> "))   #тут зберігається кількість людей
 
 a = 1
 
@@ -14,12 +14,12 @@ else:
 
      while slovo >= a:
         a = a + 1
-        z = input("> ") # тут вводятся имена людей
+        z = input("> ") # тут вводяться імена людей
         imenа_dict[z] = 0
 
 print ("Enter the total amount:")
 
-l = int(input("> "))   #счёт
+l = int(input("> "))   #рахунок
 
 print ("Who is lucky?")
 y = input("> ")
